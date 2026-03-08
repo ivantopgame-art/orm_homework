@@ -1,0 +1,28 @@
+[
+    {"model": "publisher", "pk": 1, "fields": {"name": "Пушкин"}},
+    {"model": "publisher", "pk": 2, "fields": {"name": "Лермонтов"}},
+    {"model": "publisher", "pk": 3, "fields": {"name": "Толстой"}},
+
+    {"model": "book", "pk": 1, "fields": {"title": "Капитанская дочка", "id_publisher": 1}},
+    {"model": "book", "pk": 2, "fields": {"title": "Руслан и Людмила", "id_publisher": 1}},
+    {"model": "book", "pk": 3, "fields": {"title": "Евгений Онегин", "id_publisher": 1}},
+    {"model": "book", "pk": 4, "fields": {"title": "Герой нашего времени", "id_publisher": 2}},
+    {"model": "book", "pk": 5, "fields": {"title": "Война и мир", "id_publisher": 3}},
+
+    {"model": "shop", "pk": 1, "fields": {"name": "Буквоед"}},
+    {"model": "shop", "pk": 2, "fields": {"name": "Лабиринт"}},
+    {"model": "shop", "pk": 3, "fields": {"name": "Книжный дом"}},
+
+    {"model": "stock", "pk": 1, "fields": {"id_book": 1, "id_shop": 1, "count": 10}},
+    {"model": "stock", "pk": 2, "fields": {"id_book": 1, "id_shop": 2, "count": 5}},
+    {"model": "stock", "pk": 3, "fields": {"id_book": 2, "id_shop": 1, "count": 7}},
+    {"model": "stock", "pk": 4, "fields": {"id_book": 3, "id_shop": 3, "count": 3}},
+    {"model": "stock", "pk": 5, "fields": {"id_book": 4, "id_shop": 1, "count": 4}},
+    {"model": "stock", "pk": 6, "fields": {"id_book": 5, "id_shop": 2, "count": 2}},
+
+    {"model": "sale", "pk": 1, "fields": {"price": 600, "date_sale": "2022-11-09", "id_stock": 1, "count": 1}},
+    {"model": "sale", "pk": 2, "fields": {"price": 500, "date_sale": "2022-11-08", "id_stock": 3, "count": 1}},
+    {"model": "sale", "pk": 3, "fields": {"price": 580, "date_sale": "2022-11-05", "id_stock": 2, "count": 1}},
+    {"model": "sale", "pk": 4, "fields": {"price": 490, "date_sale": "2022-11-02", "id_stock": 4, "count": 1}},
+    {"model": "sale", "pk": 5, "fields": {"price": 600, "date_sale": "2022-10-26", "id_stock": 1, "count": 1}}
+]
